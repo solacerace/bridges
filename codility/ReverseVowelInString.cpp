@@ -9,36 +9,23 @@ void revVowel(char* s)
 	unordered_set<char> us = {'a','e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 	
 	int N = strlen(s);
-	int j = N-1;
-	int i = 0, k =0;
+	int j = N-1, i = 0;
 	while(i < j)
 	{
-		cout << ++k << endl;
 		// Find left vowel
-		while(i<j && us.find(s[i]) == us.end())
-			i++;
-		
-		cout << ++k << endl;
+		while(i<j && us.find(s[i]) == us.end()) i++;
 		
 		// find right vowel
-		while(i<j && us.find(s[j]) == us.end())
-			j--;
+		while(i<j && us.find(s[j]) == us.end()) j--;
 			
-		cout << ++k << endl;	
-		if (i < j)
-		{
-			swap(s[i], s[j]);
-			i++;
-			j--;
-		}
-		
+		if (i < j) swap(s[i++], s[j--]);
 	}
 	
 }
 
 int main(int argc, char* argv[])
 {
-	char s[] = "HLL";
+	char s[] = "HERO";
 	cout << s << endl;
 	revVowel(s);
 	cout << s << endl;
