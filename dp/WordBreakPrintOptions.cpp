@@ -5,7 +5,7 @@ string from dictionary of words.
 
 input = "loveisnowhere"
 output= [love is no where
-		 love is now here]
+         love is now here]
 */
 #include<iostream>
 #include<limits>
@@ -24,12 +24,12 @@ dictionary is definitely not a good idea. We have used for simplicity of
 the program*/
 int dictionaryContains(string word)
 {
-	string dictionary[] = { "love","is","no","now","here","where"};
-	int size = sizeof(dictionary) / sizeof(dictionary[0]);
-	for (int i = 0; i < size; i++)
-		if (dictionary[i].compare(word) == 0)
-			return true;
-	return false;
+    string dictionary[] = { "love","is","no","now","here","where"};
+    int size = sizeof(dictionary) / sizeof(dictionary[0]);
+    for (int i = 0; i < size; i++)
+        if (dictionary[i].compare(word) == 0)
+            return true;
+    return false;
 }
 
 void wordBreakUtil(string str, int n, string result)
@@ -52,7 +52,7 @@ void wordBreakUtil(string str, int n, string result)
 
 void wordBreak(string str)
 {
-	wordBreakUtil(str, str.size(), "");
+    wordBreakUtil(str, str.size(), "");
 }
 
 int main(int argc, char* argv[])
@@ -60,5 +60,5 @@ int main(int argc, char* argv[])
     string words = "loveisnowhere";
     cout << "Input=" << words << endl;
     wordBreak(words);
-	return 0;
+    return 0;
 }
