@@ -1,62 +1,37 @@
 #include<iostream>
+#include<algorithm>
 #include "string.h"
 
 using namespace std;
 
-void swap(char& a, char& b)
-{
-	char t = a;
-	a = b;
-	b = t;
-}
 
 void reverse(char* s, int size)
 {
-	int li = size -1;
-	int i = 0;
-	while(i < li)
-	{
-		swap(s[i], s[li]);
-		i++;
-		li--;
-	}
+    if (size == 0) return;
+    int i=0, j = size -1;	
+    while(i < j)
+        swap(s[i++], s[j--]);
 }
 
 void reverseWord(char* s)
 {
-	// Reverse Each Word :
-	// WHO AM I ==> OHW MA I
-	int i = 0;
-	int si = 0;
-	int ei = 0;
-	int k =0;
-	while( s[i] != '\0')
-	{
-		// Remove spaces
-		while(s[i] == ' ')
-		{
-			i++;
-		}
-		
-		si = i;
-		while(s[i] != ' ' && s[i] != '\0')
-		{
-			i++;				
-		}
-		ei = i-1;
-		reverse(&s[si], ei-si+1);
-	}
-	
-	// Reverse the whole string
-	reverse(s, strlen(s));
+    int i = 0, N = strlen(s);
+    reverse(s,N);
+    while (i < N)
+    {
+        int j = i;
+        while (s[j] != ' ' && s[j] != '\0')
+            j++;
+        reverse(&s[i], j - i);
+        i = ++j; // Get past the space
+    }
 }
 
 int main(int argc, char* argv[])
 {
-	char str[] = "Who am i";
-	
-	cout << "Before=" << str << endl;
-	reverseWord(str);	
-	cout << "After=" << str << endl;
-	return 0;
+    char str[] = "Who am i";	
+    cout << "Before=" << str << endl;
+    reverseWord(str);	
+    cout << "After=" << str << endl;
+    return 0;
 }
