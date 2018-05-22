@@ -1,0 +1,35 @@
+
+1. http://en.cppreference.com/w/
+2. Igor's Grimoire: http://knockknock.org.uk/igor.html
+3. https://abseil.io/tips/
+4. https://accu.org/
+5. https://herbsutter.com/
+6. https://www.aristeia.com/
+7. https://en.wikibooks.org/wiki/C%2B%2B_Programming (and a pinch of salt)
+
+
+If you're new to C++, it's better to pick up a book that you can easily digest. Some are too dense for newbies. 
+What's good for you is something only you can decide. I linked to accu.org in previous post. 
+You'll find book reviews there to help you decide.
+
+If you aren't new, the resources I link to below will help you learn even more.
+
+Go to the C++ subreddit at https://www.reddit.com/r/cpp/ and take a look at the sidebar.
+You will find a few more resources.
+Frequent that and the cpp_questions subreddit https://www.reddit.com/r/cpp_questions/ .
+It's better to ask questions there than here.
+
+Another resource is http://cppquiz.org/ .
+The Programming subreddit https://www.reddit.com/r/programming/ is also very useful.
+Also, https://www.bfilipek.com/ Bartek's coding blog.
+http://www.1024cores.net/ - Fun with lockfree, waitfree and synchronization.
+http://preshing.com/ for more C++ fun.
+
+
+Kate Gregory recently updated her Pluralsight courses from what I heard on CPPCast. 
+I don't know her Pluralsight courses myself, but I know from her CPPcon talks, that she must be an amazing instructor. 
+In addition, on Youtube, Jason Turner does C++ Weekly videos that are awesome (each about 5 minutes long) 
+- and if you know C++, find any "Modern C++" videos by Michael Caisse.
+
+http://thispointer.com/
+http://education.cppinstitute.org/
