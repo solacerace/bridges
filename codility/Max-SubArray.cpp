@@ -22,6 +22,8 @@ int solution(vector<int> &A) {
     return maxProfit;
 }
 
+// https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
+// This solution has resulted in 100% accuracy
 int maxSubArray(vector<int> &A) {
     // write your code in C++14 (g++ 6.2.0)
     
