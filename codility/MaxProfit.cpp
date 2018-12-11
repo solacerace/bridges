@@ -27,6 +27,8 @@ int solution(vector<int> &A) {
 
 int main()
 {
+	constexpr N = 10;
+	static_assert(true, "Hello");
     vector<int> A = { 23171, 21011,  21123,  21366,  21013,  21367 };
     int res = solution(A);
 
