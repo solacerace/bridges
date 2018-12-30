@@ -92,7 +92,7 @@ void helper_print(const vector<int>& arr)
 
     cout << "Result=" << findMin(arr) << endl;
 }
-int main(int argc, char* argv[])
+int main_3(int argc, char* argv[])
 {
     helper_print(vector<int>({ 1,2,3,4,5,6,7,8,9 }));
     helper_print(vector<int>({ 1,2,3,4,5,6,7,8,9 }));
